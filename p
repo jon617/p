@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 # random password generator
-# accepts a length as an argument, or empty assumes 8
+# accepts a length as an argument, or empty assumes 10
 
 use strict;
 
-my $length = 8;
+my $length = 10;
 my $type = "medium";
 my $times = 5;
 
