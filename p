@@ -5,7 +5,7 @@
 use strict;
 
 my $length = 10;
-my $type = "medium";
+my $type = "strong";
 my $times = 5;
 
 my $i;
@@ -41,7 +41,7 @@ for ( $i = 1; $i <= $times; $i ++ ) {
   if ( $type eq "strong" ) {
     print `strings /dev/urandom | grep -o '[[:print:]]' | head -n $length | tr -d '\n '; echo `;
   } elsif ( $type eq "medium" ) {
-    print `strings /dev/urandom | tr -dc '1234567890!@#$%abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' | head -c $length ; echo `;
+    print `strings /dev/urandom | tr -dc '1234567890!@#$%()=?abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' | head -c $length ; echo `;
   } elsif ( $type eq "light" ) {
     print `strings /dev/urandom | tr -dc '12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB' | head -c $length ; echo `;
   }
