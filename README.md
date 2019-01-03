@@ -2,7 +2,7 @@
 
 Run like this:
 
-Generate some random passwords with medium strength and 8 characters long:
+Generate some random passwords with medium strength and 10 characters long:
 
 p
 
