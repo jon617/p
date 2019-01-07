@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 # random password generator
-# accepts a length as an argument, or empty assumes 10
+# accepts a length as an argument, or empty assumes 12
 
 use strict;
 
-my $length = 10;
+my $length = 12;
 my $type = "strong";
 my $times = 5;
 
@@ -29,10 +29,10 @@ for ( $i = 0; $i <= $#ARGV; $i ++ ) {
   }
 }
 
-if ( $ARGV[0] eq "" ) {
-  print "No arguments specified. Defaulting to strength \"$type\" and length $length\n";
-  print "\n";
-}
+#if ( $ARGV[0] eq "" ) {
+#  print "No arguments specified. Defaulting to strength \"$type\" and length $length\n";
+#  print "\n";
+#}
 
 # make a password
 
